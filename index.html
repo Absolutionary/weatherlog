@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Redirect page</title>
-    <meta http-equiv="refresh" content="0;url=http://achesak.github.io/weatherlog/index.html" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>WeatherLog - Home</title>
+	<meta name="description" content="WeatherLog is an application for keeping track of the weather and getting information about past trends.">
+
+	<link href="minimal.css" rel="stylesheet">
 </head>
-
 <body>
-    <p>This is a redirect page. If for some reason you are not automatically redirected, please click this link:</p>
-    <p><a href="http://achesak.github.io/weatherlog/index.html">http://achesak.github.io/weatherlog/index.html</a></p>
-</body>
+<div class="container">
+	<header>
+		<a class="logo" href="index.html">WeatherLog</a>
+		<nav class="float-right">
+			<ul>
+				<li><a href="screenshots.html">Screenshots</a></li>
+				<li><a href="download.html">Download</a></li>
+				<li><a href="https://github.com/achesak/weatherlog">Code</a></li>
+				<li><a href="help/help.html">Help</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="row">
+		<div class="">
+			<h1>About WeatherLog</h1>
+			<p>WeatherLog is an application for keeping track of the weather and getting information about past trends.</p>
+            
+            <p>WeatherLog can organize weather data and present it in a clear, easy to understand manner. It can also show detailed
+            information about patterns and overall info, as well as display graphs to visualize the data.</p>
 
+			<img src="images/main_profile_example.png" />
+			<h1>Using WeatherLog</h1>
+			<p>WeatherLog requires the <a href="https://www.python.org/">Python</a> interpreter to run. Development is done using 2.7.x,
+			but it should work with 3.x as well. <a href="http://www.gtk.org/">GTK+ 3</a> and its Python bindings are also required.
+			The graph features also require <a href="http://matplotlib.org/">Matplotlib</a>.</p>
+
+            <p>To run WeatherLog, open a terminal in the directory containing the files and type python weatherlog.py. On some systems
+            double-clicking on the <em>weatherlog.py</em> file will also work.</p>
+
+            <p>WeatherLog currently only runs on Linux and Windows. Note that while the application should work on Windows, it is not
+            extensively tested on that platform.</p>
+            
+            <h1>License</h1>
+            <p>WeatherLog is released under the <a href="http://opensource.org/licenses/mit-license.php">MIT open source license</a>.
+            See the LICENSE file for more information.</p>
+
+            <p>WeatherLog uses <a href="https://launchpad.net/python-weather-api">python-weather-api</a> to get data from weather APIs.
+            See the README and LICENSE files in <em>weatherlog_resources/dialogs/pywapi</em> for more information.</p>
+
+            <p>The program icon is from an <a href="https://www.iconfinder.com/iconsets/weather-icons-8">icon set by Mr J.</a></p>
+
+		</div>
+	</div>
+	
+	<footer>CSS by <a href="http://minimalcss.com">Minimal</a>
+	</footer></div>
+</div>
+</body>
 </html>
